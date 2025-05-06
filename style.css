@@ -1,78 +1,57 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
+/* style.css */
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navbar */
 .navbar {
-    background-color: #fff;
+    background-color: #f8f9fa;
 }
 
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #000;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Hero Section */
 .hero-section {
     background: url('images/imagefromoutside.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-    padding: 100px 0;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .hero-section h1 {
     font-size: 3rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero-section .tagline {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-.hero-section .btn {
     font-size: 1.2rem;
-    padding: 10px 30px;
-    background-color: #f4a261;
-    border: none;
 }
 
-/* About Section */
+.btn-primary {
+    background-color: #6f4f37;
+    border-color: #6f4f37;
+}
+
 .about-section {
-    background-color: #f1f1f1;
+    background-color: #f8f9fa;
     padding: 50px 0;
 }
 
-.about-section img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Footer */
 .footer {
-    background-color: #333;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
 }
 
 .footer a {
-    color: #f4a261;
-    text-decoration: none;
+    color: white;
     margin: 0 10px;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.footer img {
+    width: 100px;
 }
