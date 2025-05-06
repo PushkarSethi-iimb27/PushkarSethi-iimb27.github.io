@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafe Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitaabi Kofee Cafe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <img src="images/logo.jpg" alt="Cafe Logo" class="logo">
-    <div class="hero">
-      <img src="images/imagefromoutside.jpg" alt="Cafe Exterior" class="hero-img">
-      <div class="hero-text">
-        <h1>Welcome to Our Cozy Cafe!</h1>
-        <p>Enjoy delicious coffee and snacks in a warm and inviting atmosphere.</p>
-      </div>
-    </div>
-  </header>
+    <header>
+        <img src="logo.jpg" alt="Kitaabi Kofee Cafe Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- About Us Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>At our cafe, we serve the best coffee, snacks, and cakes in town. Whether you're looking for a cozy corner to read or a place to catch up with friends, we offer a welcoming ambiance.</p>
-  </section>
+    <section id="home">
+        <img src="imagefromoutside.jpg" alt="Kitaabi Kofee Cafe Front View" class="hero-img">
+        <div class="overlay">
+            <h1>Welcome to Kitaabi Kofee Cafe</h1>
+            <p>A book lover's paradise with the finest coffee in town</p>
+        </div>
+    </section>
 
-  <!-- Menu Section -->
-  <section class="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-items">
-      <img src="images/menu.jpg" alt="Menu Items" class="menu-img">
-      <p>Explore our wide range of coffees, teas, sandwiches, and pastries. We're sure you'll find something to satisfy your cravings.</p>
-    </div>
-  </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="interior.jpg" alt="Kitaabi Kofee Cafe Interior">
+            <p>Kitaabi Kofee Cafe is where stories meet sips. We blend aromatic coffee, cozy reading spaces, and delicious bites to create an unforgettable experience for book and coffee lovers alike.</p>
+        </div>
+    </section>
 
-  <!-- Cafe Interior Section -->
-  <section class="interior">
-    <h2>Our Interior</h2>
-    <img src="images/interior.jpg" alt="Cafe Interior" class="interior-img">
-    <p>Relax in our comfortable seating area with cozy lighting and a homely vibe.</p>
-  </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <img src="menu.jpg" alt="Kitaabi Kofee Cafe Menu" class="menu-img">
+    </section>
 
-  <!-- Contact Us Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Visit us at: 123 Main Street, YourCity, YourCountry</p>
-    <p>Call us: 123-456-7890</p>
-    <p>Email: contact@cafe.com</p>
-  </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label>Name:</label><input type="text" placeholder="Your Name" required>
+            <label>Email:</label><input type="email" placeholder="Your Email" required>
+            <label>Message:</label><textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <img src="images/footerlogo.jpg" alt="Footer Logo" class="footer-logo">
-    <p>&copy; 2025 Cozy Cafe. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        <img src="footerlogo.jpg" alt="Kitaabi Kofee Cafe Footer Logo" class="footer-logo">
+        <p>&copy; 2025 Kitaabi Kofee Cafe. All rights reserved.</p>
+    </footer>
 </body>
 </html>
