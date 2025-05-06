@@ -1,6 +1,6 @@
-// You can add some simple interactivity here if you want
-// Example: Simple alert when clicking a menu item
-
-document.querySelector('.menu-img').addEventListener('click', function() {
-  alert('Enjoy our delicious menu!');
+// Example JavaScript functionality
+document.addEventListener("DOMContentLoaded", function () {
+    // Add fade-in effect for the hero section
+    const heroSection = document.querySelector('.hero-section');
+    heroSection.classList.add('fade-in');
 });
