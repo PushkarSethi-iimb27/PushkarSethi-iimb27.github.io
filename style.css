@@ -55,3 +55,7 @@ header {
 .footer-logo {
     width: 100px;
 }
+
+.social-icons a {
+    font-size: 1.5rem;
+}
