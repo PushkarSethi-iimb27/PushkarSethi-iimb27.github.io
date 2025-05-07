@@ -1,79 +1,192 @@
-* {
-    box-sizing: border-box;
-}
+/* Kitabi Koffee Café Custom Styles */
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    margin: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: #f8f5f1;
+  color: #4e342e;
 }
 
-header {
-    margin-bottom: 20px;
+.bg-brown {
+  background-color: #6d4c41 !important;
 }
 
-.hero {
-    background-image: url('imagefromoutside.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+.bg-cream {
+  background-color: #f8f5f1 !important;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+.brand-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
-.about, .menu, .gallery, .contact {
-    padding: 60px 0;
+.navbar {
+  font-family: 'Roboto Slab', serif;
+  box-shadow: 0 2px 8px rgba(77, 54, 41, 0.08);
 }
 
-.about h2, .menu h2, .gallery h2, .contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+.navbar .nav-link {
+  color: #f8f5f1 !important;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-.menu img {
-    max-width: 100%;
-    height: auto;
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #ffe0b2 !important;
 }
 
-.gallery {
-    background-color: #f1f1f1;
+.hero-section {
+  min-height: 80vh;
+  background: linear-gradient(120deg, #f8f5f1 60%, #d7ccc8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
-.gallery-image {
-    margin: 10px 0;
+.hero-section h1 {
+  font-family: 'Pacifico', cursive;
+  color: #6d4c41;
+  font-size: 2.8rem;
 }
 
-.footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
+.hero-section .lead {
+  color: #795548;
 }
 
-.logo {
-    width: 150px;
+.btn-coffee {
+  background-color: #a1887f;
+  color: #fff;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
 }
 
-.footer-logo {
-    width: 100px;
+.btn-coffee:hover, .btn-coffee:focus {
+  background-color: #6d4c41;
+  color: #ffe0b2;
 }
 
-.social-icons a {
+.btn-outline-light {
+  border-color: #a1887f;
+  color: #a1887f;
+}
+
+.btn-outline-light:hover, .btn-outline-light:focus {
+  background: #a1887f;
+  color: #fff;
+}
+
+.section-title {
+  font-family: 'Pacifico', cursive;
+  color: #6d4c41;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-section {
+  background: #fff8f0;
+}
+
+.menu-category {
+  color: #8d6e63;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px dotted #d7ccc8;
+  color: #4e342e;
+}
+
+.menu-img {
+  max-width: 90%;
+  border: 3px solid #ffe0b2;
+}
+
+.gallery-img {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 3px solid #ffe0b2;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: 0 8px 24px rgba(77, 54, 41, 0.12);
+}
+
+.about-section ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section .form-label {
+  color: #6d4c41;
+  font-weight: 600;
+}
+
+.contact-section .form-control:focus {
+  border-color: #a1887f;
+  box-shadow: 0 0 0 0.2rem rgba(161, 136, 127, 0.15);
+}
+
+.contact-section .btn-coffee {
+  margin-top: 0.5rem;
+}
+
+.footer-section {
+  background: #6d4c41;
+  color: #ffe0b2;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+}
+
+.footer-section img {
+  border: 2px solid #ffe0b2;
+}
+
+@media (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .section-title {
     font-size: 1.5rem;
-    color: white;
-    transition: color 0.3s;
+  }
+  .menu-img, .gallery-img {
+    max-width: 100%;
+  }
 }
 
-.social-icons a:hover {
-    color: #007bff;
+/* Accessibility: High contrast for text on backgrounds */
+.bg-brown, .footer-section {
+  color: #ffe0b2 !important;
 }
+
+/* Custom scrollbar for cozy feel */
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #f8f5f1;
+}
+body::-webkit-scrollbar-thumb {
+  background: #a1887f;
+  border-radius: 5px;
+}
+
+/* Fade-in animation for sections and header */
+section, header {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.fade-in {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 1s, transform 1s;
+} 
