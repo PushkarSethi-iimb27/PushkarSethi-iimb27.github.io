@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,32 +6,35 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #fffaf3;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f0;
   color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #4e342e;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #6d4c41;
+  padding: 15px 0;
 }
 
-.logo {
+header .logo {
   height: 60px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -40,26 +43,38 @@ nav ul li a {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background-color: #fff3e0;
+  background-color: #ffe0b2;
 }
 
 .section {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
+.section h2 {
+  margin-bottom: 20px;
+  color: #5d4037;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
 .section-img {
-  width: 90%;
-  max-width: 500px;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
   border-radius: 10px;
+  margin: 20px 0;
 }
 
 .menu-list {
-  margin-top: 20px;
   list-style: none;
+  margin-top: 20px;
+}
+
+.menu-list li {
+  margin: 5px 0;
   font-size: 1.1em;
-  color: #5d4037;
 }
 
 .gallery {
@@ -71,7 +86,6 @@ nav ul li a {
 
 .gallery img {
   width: 300px;
-  height: auto;
   border-radius: 8px;
 }
 
@@ -91,43 +105,37 @@ form textarea {
 }
 
 form button {
-  background-color: #4e342e;
+  background-color: #6d4c41;
   color: white;
-  border: none;
   padding: 10px;
+  border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 form button:hover {
-  background-color: #3e2723;
+  background-color: #5d4037;
 }
 
 footer {
   text-align: center;
-  padding: 30px;
-  background-color: #4e342e;
+  padding: 30px 0;
+  background-color: #6d4c41;
   color: white;
-  margin-top: 50px;
 }
 
-footer img {
+.footer-logo {
   height: 40px;
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-end;
   }
 
   .gallery {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .section-img {
-    width: 100%;
   }
 }
